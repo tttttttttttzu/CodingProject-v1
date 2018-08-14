@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+
+  <!--絕對不能刪啊孩紙 匯入bootstrape javascript jQuery bootstrape-->
+  <head>
+  <title>bts.tw</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
+    background:#f8f6f2;
 }
 .bgimg {
     background-position: center;
@@ -19,23 +32,58 @@ url("https://s33.postimg.cc/4hotrd7db/20180807_180808_0001.jpg");
 .menu {
     display: none;
 }
+ .w3-text-white{
+     font-size:50px;
+ }
+  @media only screen and (max-width: 600px) {
+    .w3-text-white{
+      font-size:30px;
+    }
+}
+
+
 </style>
+  <script>
+$(function(){
+   // 偵聽a click
+   $(".w3-col a").bind("click",function(){
+
+       var id=$(this).attr("data-id");
+
+       // 取得目標區塊的y座標
+       var target_top = $("#"+id).offset().top;
+
+     // 取得body物件 這種寫法在各瀏覽器上最保險
+       var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+
+       // 移動捲軸有動畫效果
+     		$body.animate({
+     			  scrollTop: target_top
+     		}, 500);
+
+   })
+})
+
+</script>
+
 <body>
+
 
 <!-- 固定快捷列 -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
     <div class="w3-col s3">
-      <a href="#story" class="w3-button w3-block w3-black">STORY</a>
+      <a href="javascript:void(1)" class="w3-button w3-block w3-black" data-id="story">STORY</a>
     </div>
     <div class="w3-col s3">
-      <a href="#info" class="w3-button w3-block w3-black">INFO</a>
+      <a href="javascript:void(1)" class="w3-button w3-block w3-black" data-id="info">INFO</a>
     </div>
     <div class="w3-col s3">
-      <a href="#FAQ" class="w3-button w3-block w3-black">FAQ</a>
+      <a href="javascript:void(1)" class="w3-button w3-block w3-black" data-id="FAQ">FAQ</a>
     </div>
     <div class="w3-col s3">
-      <a href="#about us" class="w3-button w3-block w3-black">ABOUT US</a>
+      <a href="javascript:void(1)s" class="w3-button w3-block w3-black" ; data-id="aboutus">ABOUT US</a>
     </div>
   </div>
 </div>
@@ -46,7 +94,7 @@ url("https://s33.postimg.cc/4hotrd7db/20180807_180808_0001.jpg");
   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
   </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:50px">米蛋糕<br>看天田烘培坊
+    <span class="w3-text-white">看天田烘培坊<br>
   </span><span style=</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
@@ -60,15 +108,23 @@ url("https://s33.postimg.cc/4hotrd7db/20180807_180808_0001.jpg");
 <div class="w3-container" id="story">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">產品故事</span></h5>
-    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
-      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+    <p>
+   &nbsp;&nbsp; 為什麼會有這一系列的米產品？是因為有兩個人，想要解決台灣「米」過剩的問題。<br><br>
+
+ &nbsp;&nbsp; 近年來，有越來越多種的飲食型態，大家對於正餐的選擇已漸漸看不到白米這樣糧食。所以可見白米已經不是大家最主要的需求了。<br><br>
+
+  &nbsp;&nbsp; 稻米，大家都大量的去栽種水稻，只追求水稻的產量，而不管它的品質。進而造成全被儲存在糧倉內，最後卻用“飼料米”來釋出。<br><br>
+
+  &nbsp;&nbsp; 好食機創辦人謝昇佑就是那個想要改變這個現況的人。他想，米，到底還能做什麼？看看國外，他們的米都用在哪裡了？日本，他們的米拿來做壽司、酒。但他們卻是因為有這些需求所以特別去種哪些米。而創辦人謝昇佑跟了另外一個人一起合作，就是做這個蛋糕的人-郭明賢大哥。<br><br>
+
+  &nbsp;&nbsp; 郭明賢大哥，自己研究蛋糕烘焙的訣竅，包括溫度、濕度等。像是產品裡的蛋糕和鳳梨酥，大哥在做的時候都保持在130、140度。為何要維持在這個溫度，而不是用200以上的高溫，花兩倍的時間用低溫做蛋糕呢？因為在加熱的過程中會產生丙烯酰胺，它是一種會致癌的物質，所以為了讓大家吃得更健康，選了這種製作方式。<br><br>
+
+  &nbsp;&nbsp; 郭大哥和好食機創辦人謝昇佑在這個蛋糕上面花了很多心思，不單單是讓大家吃得健康，且處理了台灣稻米的困境，更是帶動了台灣稻米的產業！
+
+
+</i></p>
+
     </div>
-    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
   </div>
 </div>
 
@@ -90,19 +146,19 @@ url("https://s33.postimg.cc/4hotrd7db/20180807_180808_0001.jpg");
     <div id="蛋糕" class="w3-container menu w3-padding-48 w3-card">
       <h5>糙米原味輕乳酪</h5>
       <p class="w3-text-grey">天然米香與輕乳酪相輔相成，細棉淡雅，是最初的感動。</p><br>
+
+
       <h5>糙米檸檬輕乳酪</h5>
       <p class="w3-text-grey">有機檸檬汁添加，撲鼻近視強烈香氣，卻不帶酸澀。</p><br>
 
-      <h5>糙米金棗輕乳酪</h5>
-      <p class="w3-text-grey">宜蘭特產蜜金棗，每一口的吃得到果肉的芬芳。</p><br>
+      <h5>青仁蜜黑豆蛋糕</h5>
+      <p class="w3-text-grey">黑豆磨粉更磨漿，熬煮 Q 軟蜜黑豆，戚風口感層次分明、綿密甘甜。</p><br>
 
       <h5>黑豆桂圓布朗尼</h5>
       <p class="w3-text-grey">黑豆與可可連袂舞出絕妙華爾滋!桂圓與核桃點綴曲中小節，濃烈令人深刻回味。</p><br>
     </div>
 
     <div id="打卡酥" class="w3-container menu w3-padding-48 w3-card">
-      <h5>桂圓核桃</h5>
-      <p class="w3-text-grey"></p><br>
 
       <h5>地瓜檸檬</h5>
       <p class="w3-text-grey"></p><br>
@@ -110,55 +166,64 @@ url("https://s33.postimg.cc/4hotrd7db/20180807_180808_0001.jpg");
       <h5>經典鳳梨</h5>
       <p class="w3-text-grey"></p><br>
     </div>
-    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+
   </div>
 </div>
 
-<!-- Contact/Area Container -->
-<div class="w3-container" id="FAQ" style="padding-bottom:32px;">
+
+<!-- 常見問題 -->
+<div class="w3-container" id="FAQ">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">常見問題</span></h5>
-    <p>Find us at some address at some place.</p>
-    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
-    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-    </form>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">常見問題</span></h5>
+
+    <p>我是常見問題</p>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+    </div>
   </div>
 </div>
 
-<!-- End page content -->
+<!-- 關於我們 -->
+<div class="w3-container" id="aboutus">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">關於我們</span></h5>
+
+    <!--郭慕祈-->
+     <h5>郭慕祈</h5>
+     <h6>介紹</h6>
+     <a href=" https://medium.com/new-stor ">read more</a>
+
+   	<!--葉柏秀-->
+   	<h5>葉柏秀</h5>
+   	<h6>介紹</h6>
+     <a href="https://medium.com/@justinpsyeh">read more</a>
+
+     <!--蔡昀蓁-->
+     <h5>蔡昀蓁</h5>
+     <h6>介紹</h6>
+     <a href="https://medium.com/@yunyuntsai_97118">read more</a>
+
+     <!--曹丞茲-->
+     <h5>曹丞茲</h5>
+     <h6>介紹</h6>
+     <a href="https://medium.com/@chelseatsao0321">read more</a>
+   </head>
+    </div>
+  </div>
 </div>
+
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
-<!-- Add Google Maps -->
+
+
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Tabbed Menu
+// 產品頁
 function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
