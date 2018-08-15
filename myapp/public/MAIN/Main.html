@@ -3,12 +3,19 @@
 
   <!--絕對不能刪啊孩紙 匯入bootstrape javascript jQuery bootstrape-->
   <head>
-  <title>bts.tw</title>
+  <title>看天田烘焙坊</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="./css/maintest1.CSS">
+
+
+
+
 </head>
 
 
@@ -26,7 +33,7 @@ body, html {
     background-position: center;
     background-size: cover;
     background-image:
-url("https://s33.postimg.cc/4hotrd7db/20180807_180808_0001.jpg");
+url("https://s33.postimg.cc/xfrvl3cnz/image.png");
     min-height: 65%;
 }
 .menu {
@@ -40,6 +47,12 @@ url("https://s33.postimg.cc/4hotrd7db/20180807_180808_0001.jpg");
       font-size:30px;
     }
 }
+#return-to-top{
+    bottom:50px;
+    position:fixed;
+    right:30px;
+  }
+
 
 
 </style>
@@ -132,33 +145,39 @@ $(function(){
 <div class="w3-container" id="info">
   <div class="w3-content" style="max-width:700px">
 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">烘培商品</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">烘焙商品</span></h5>
 
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, '蛋糕');" id="myLink">
-        <div class="w3-col s6 tablink">本土雜糧糙米蛋糕</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, '糙米輕乳酪蛋糕');" id="myLink">
+        <div class="w3-col s4 tablink">糙米輕乳酪蛋糕</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, '打卡酥');">
-        <div class="w3-col s6 tablink">在地米復興打卡酥</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, '本土雜糧黑豆蛋糕');">
+        <div class="w3-col s4 tablink">本土雜糧黑豆蛋糕  </div>
+      </a>
+       <a href="javascript:void(0)" onclick="openMenu(event, '在地米復興打卡酥');">
+        <div class="w3-col s4 tablink">在地米復興打卡酥  </div>
+
       </a>
     </div>
 
-    <div id="蛋糕" class="w3-container menu w3-padding-48 w3-card">
+    <div id="糙米輕乳酪蛋糕" class="w3-container menu w3-padding-48 w3-card">
       <h5>糙米原味輕乳酪</h5>
       <p class="w3-text-grey">天然米香與輕乳酪相輔相成，細棉淡雅，是最初的感動。</p><br>
 
 
       <h5>糙米檸檬輕乳酪</h5>
       <p class="w3-text-grey">有機檸檬汁添加，撲鼻近視強烈香氣，卻不帶酸澀。</p><br>
+</div>
+      <div id="本土雜糧黑豆蛋糕" class="w3-container menu w3-padding-48 w3-card">
 
       <h5>青仁蜜黑豆蛋糕</h5>
       <p class="w3-text-grey">黑豆磨粉更磨漿，熬煮 Q 軟蜜黑豆，戚風口感層次分明、綿密甘甜。</p><br>
 
       <h5>黑豆桂圓布朗尼</h5>
       <p class="w3-text-grey">黑豆與可可連袂舞出絕妙華爾滋!桂圓與核桃點綴曲中小節，濃烈令人深刻回味。</p><br>
-    </div>
 
-    <div id="打卡酥" class="w3-container menu w3-padding-48 w3-card">
+    </div>
+    <div id="在地米復興打卡酥" class="w3-container menu w3-padding-48 w3-card">
 
       <h5>地瓜檸檬</h5>
       <p class="w3-text-grey"></p><br>
@@ -175,14 +194,22 @@ $(function(){
 <div class="w3-container" id="FAQ">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">常見問題</span></h5>
-
-    <p>我是常見問題</p>
-
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
-      <p>Chef, Coffeeist and Owner: Liam Brown</p>
-    </div>
-  </div>
+<!-- 展開式文字框 -->
+    <div class="toggle-box">
+  <div class="toggle-title">蛋糕的保存期限</div>
+  <div class="toggle-text">冷凍可保存一個月，不含防腐劑請盡早食用玩畢。最佳賞味期限3日內。</div>
+</div>
+<div class="toggle-box">
+  <div class="toggle-title">打卡酥的保存期限</div>
+  <div class="toggle-text">輸入文字</div>
+</div>
+<div class="toggle-box">
+  <div class="toggle-title">3</div>
+  <div class="toggle-text">輸入文字</div>
+</div>
+<div class="toggle-box">
+  <div class="toggle-title">4</div>
+  <div class="toggle-text">輸入文字</div>
 </div>
 
 <!-- 關於我們 -->
@@ -215,6 +242,9 @@ $(function(){
 </div>
 
 
+<i class="fas fa-chevron-circle-up" id="return-to-top" style="font-size:50px;"></i>
+
+
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
 </footer>
@@ -240,6 +270,6 @@ function openMenu(evt, menuName) {
 document.getElementById("myLink").click();
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-
+<script  type="text/javascript" src="./js/maintest2.js"></script>
 </body>
 </html>
