@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+  <!--絕對不能刪啊孩紙 匯入bootstrape javascript jQuery bootstrape-->
+  <head>
+  <title>看天田烘焙坊</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="./css/maintest1.CSS">
+
+
+
+
+</head>
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    background:#f8f6f2;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image:
+url("https://s33.postimg.cc/xfrvl3cnz/image.png");
+    min-height: 65%;
+}
+.menu {
+    display: none;
+}
+ .w3-text-white{
+     font-size:50px;
+ }
+  @media only screen and (max-width: 600px) {
+    .w3-text-white{
+      font-size:30px;
+    }
+}
+#return-to-top{
+    bottom:50px;
+    position:fixed;
+    right:30px;
+  }
+
+
+
+</style>
+  <script>
+$(function(){
+   // 偵聽a click
+   $(".w3-col a").bind("click",function(){
+
+       var id=$(this).attr("data-id");
+
+       // 取得目標區塊的y座標
+       var target_top = $("#"+id).offset().top;
+
+     // 取得body物件 這種寫法在各瀏覽器上最保險
+       var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+
+       // 移動捲軸有動畫效果
+     		$body.animate({
+     			  scrollTop: target_top
+     		}, 500);
+
+   })
+})
+
+</script>
+
+<body>
+
+
+<!-- 固定快捷列 -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="javascript:void(1)" class="w3-button w3-block w3-black" data-id="story">STORY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="javascript:void(1)" class="w3-button w3-block w3-black" data-id="info">INFO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="javascript:void(1)" class="w3-button w3-block w3-black" data-id="FAQ">FAQ</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="javascript:void(1)s" class="w3-button w3-block w3-black" ; data-id="aboutus">ABOUT US</a>
+    </div>
+  </div>
+</div>
+
+
+<!--封面照 •••••••••••••••••••••••定義"on top"-->
+<header class="bgimg w3-display-container w3-grayscale-min" id="on top">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white">看天田烘培坊<br>
+  </span><span style=</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- 產品故事 -->
+<div class="w3-container" id="story">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">產品故事</span></h5>
+    <p>
+   &nbsp;&nbsp; 為什麼會有這一系列的米產品？是因為有兩個人，想要解決台灣「米」過剩的問題。<br><br>
+
+ &nbsp;&nbsp; 近年來，有越來越多種的飲食型態，大家對於正餐的選擇已漸漸看不到白米這樣糧食。所以可見白米已經不是大家最主要的需求了。<br><br>
+
+  &nbsp;&nbsp; 稻米，大家都大量的去栽種水稻，只追求水稻的產量，而不管它的品質。進而造成全被儲存在糧倉內，最後卻用“飼料米”來釋出。<br><br>
+
+  &nbsp;&nbsp; 好食機創辦人謝昇佑就是那個想要改變這個現況的人。他想，米，到底還能做什麼？看看國外，他們的米都用在哪裡了？日本，他們的米拿來做壽司、酒。但他們卻是因為有這些需求所以特別去種哪些米。而創辦人謝昇佑跟了另外一個人一起合作，就是做這個蛋糕的人-郭明賢大哥。<br><br>
+
+  &nbsp;&nbsp; 郭明賢大哥，自己研究蛋糕烘焙的訣竅，包括溫度、濕度等。像是產品裡的蛋糕和鳳梨酥，大哥在做的時候都保持在130、140度。為何要維持在這個溫度，而不是用200以上的高溫，花兩倍的時間用低溫做蛋糕呢？因為在加熱的過程中會產生丙烯酰胺，它是一種會致癌的物質，所以為了讓大家吃得更健康，選了這種製作方式。<br><br>
+
+  &nbsp;&nbsp; 郭大哥和好食機創辦人謝昇佑在這個蛋糕上面花了很多心思，不單單是讓大家吃得健康，且處理了台灣稻米的困境，更是帶動了台灣稻米的產業！
+
+
+</i></p>
+
+    </div>
+  </div>
+</div>
+
+<!-- 產品資訊 -->
+<div class="w3-container" id="info">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">烘焙商品</span></h5>
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, '糙米輕乳酪蛋糕');" id="myLink">
+        <div class="w3-col s4 tablink">糙米輕乳酪蛋糕</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, '本土雜糧黑豆蛋糕');">
+        <div class="w3-col s4 tablink">本土雜糧黑豆蛋糕  </div>
+      </a>
+       <a href="javascript:void(0)" onclick="openMenu(event, '在地米復興打卡酥');">
+        <div class="w3-col s4 tablink">在地米復興打卡酥  </div>
+
+      </a>
+    </div>
+
+    <div id="糙米輕乳酪蛋糕" class="w3-container menu w3-padding-48 w3-card">
+      <h5>糙米原味輕乳酪</h5>
+      <p class="w3-text-grey">天然米香與輕乳酪相輔相成，細棉淡雅，是最初的感動。</p><br>
+
+
+      <h5>糙米檸檬輕乳酪</h5>
+      <p class="w3-text-grey">有機檸檬汁添加，撲鼻近視強烈香氣，卻不帶酸澀。</p><br>
+</div>
+      <div id="本土雜糧黑豆蛋糕" class="w3-container menu w3-padding-48 w3-card">
+
+      <h5>青仁蜜黑豆蛋糕</h5>
+      <p class="w3-text-grey">黑豆磨粉更磨漿，熬煮 Q 軟蜜黑豆，戚風口感層次分明、綿密甘甜。</p><br>
+
+      <h5>黑豆桂圓布朗尼</h5>
+      <p class="w3-text-grey">黑豆與可可連袂舞出絕妙華爾滋!桂圓與核桃點綴曲中小節，濃烈令人深刻回味。</p><br>
+
+    </div>
+    <div id="在地米復興打卡酥" class="w3-container menu w3-padding-48 w3-card">
+
+      <h5>地瓜檸檬</h5>
+      <p class="w3-text-grey"></p><br>
+
+      <h5>經典鳳梨</h5>
+      <p class="w3-text-grey"></p><br>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- 常見問題 -->
+<div class="w3-container" id="FAQ">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">常見問題</span></h5>
+<!-- 展開式文字框 -->
+    <div class="toggle-box">
+  <div class="toggle-title">蛋糕的保存期限</div>
+  <div class="toggle-text">冷凍可保存一個月，不含防腐劑請盡早食用玩畢。最佳賞味期限3日內。</div>
+</div>
+<div class="toggle-box">
+  <div class="toggle-title">打卡酥的保存期限</div>
+  <div class="toggle-text">輸入文字</div>
+</div>
+<div class="toggle-box">
+  <div class="toggle-title">3</div>
+  <div class="toggle-text">輸入文字</div>
+</div>
+<div class="toggle-box">
+  <div class="toggle-title">4</div>
+  <div class="toggle-text">輸入文字</div>
+</div>
+
+<!-- 關於我們 -->
+<div class="w3-container" id="aboutus">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">關於我們</span></h5>
+
+    <!--郭慕祈-->
+     <h5>郭慕祈</h5>
+     <h6>介紹</h6>
+     <a href=" https://medium.com/new-stor ">read more</a>
+
+   	<!--葉柏秀-->
+   	<h5>葉柏秀</h5>
+   	<h6>介紹</h6>
+     <a href="https://medium.com/@justinpsyeh">read more</a>
+
+     <!--蔡昀蓁-->
+     <h5>蔡昀蓁</h5>
+     <h6>介紹</h6>
+     <a href="https://medium.com/@yunyuntsai_97118">read more</a>
+
+     <!--曹丞茲-->
+     <h5>曹丞茲</h5>
+     <h6>介紹</h6>
+     <a href="https://medium.com/@chelseatsao0321">read more</a>
+   </head>
+    </div>
+  </div>
+</div>
+
+
+<i class="fas fa-chevron-circle-up" id="return-to-top" style="font-size:50px;"></i>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+</footer>
+
+
+
+<script>
+
+// 產品頁
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script  type="text/javascript" src="./js/maintest2.js"></script>
+</body>
+</html>
