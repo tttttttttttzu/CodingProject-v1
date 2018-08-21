@@ -1,3 +1,15 @@
+* {
+  -webkit-user-select: none;
+  font-family: "微軟正黑體";
+}
+
+body, html {
+  background-color: #f0f0f0;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
 body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
@@ -23,25 +35,23 @@ url("https://s33.postimg.cc/xfrvl3cnz/image.png");
 }
 #return-to-top{
     bottom:50px;
-    position:fixed;
-    right:30px;
+  position:fixed;
+right:30px;
   }
 
   #aboutcard{
   box-shadow: unset;
 }
 
-* {
-  -webkit-user-select: none;
-  font-family: "微軟正黑體";
-}
+  #cart{
+    bottom:130px;
+    position:fixed;
+    right:30px;
+  }
+  
 
-body, html {
-  background-color: #f0f0f0;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-}
+
+
 /* 外框 */
 .toggle-box {
   position: relative;
@@ -86,14 +96,29 @@ body, html {
 #return-to-top {
   cursor: pointer;
 }
+
+#on{
+  cursor: pointer;
+}
+
+#out{
+  cursor: pointer;
+}
+
+#in{
+  cursor: pointer;
+}
+
 /* about圖片 */
-#about img{
+#aboutus img{
   width:150px;
 }
 
 .w3-col > h5 {
   margin: 20px 0px 0px 0px;
 }
+
+
 
 /* about文字不換行 */
 /* .w3-content > h6 { */
