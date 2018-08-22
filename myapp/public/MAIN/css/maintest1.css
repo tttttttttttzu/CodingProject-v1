@@ -4,13 +4,6 @@
 }
 
 body, html {
-  background-color: #f0f0f0;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-}
-
-body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
     background:#f8f6f2;
@@ -48,10 +41,19 @@ right:30px;
     position:fixed;
     right:30px;
   }
+
+  #out{
+   width:50;
+   text-align:center;
+  }
   
 
-
-
+body, html {
+  background-color: #f0f0f0;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
 /* 外框 */
 .toggle-box {
   position: relative;
