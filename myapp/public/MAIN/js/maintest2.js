@@ -24,7 +24,6 @@ $(function(){
 
    })
 })
-
 // 產品頁
 function openMenu(evt, menuName) {
   var i, x, tablinks;

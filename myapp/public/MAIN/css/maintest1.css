@@ -21,15 +21,20 @@ url("https://s33.postimg.cc/xfrvl3cnz/image.png");
  .w3-text-white{
      font-size:50px;
  }
+
   @media only screen and (max-width: 600px) {
     .w3-text-white{
       font-size:30px;
     }
 }
+
+
+
 #return-to-top{
-    bottom:50px;
+  bottom:50px;
   position:fixed;
-right:30px;
+  right:30px;
+  font-size:50px;
   }
 
   #aboutcard{
@@ -37,16 +42,31 @@ right:30px;
 }
 
   #cart{
-    bottom:130px;
+    bottom:125px;
     position:fixed;
     right:30px;
+    font-size:55px;
+
   }
+
+
+    @media only screen and (max-width: 600px) {
+    #cart {
+        font-size:44px;
+      }
+    }
+
+
+    @media only screen and (max-width: 600px) {
+    #return-to-top {
+        font-size:44px;
+      }
+    }
 
   #out{
    width:50;
    text-align:center;
   }
-  
 
 body, html {
   background-color: #f0f0f0;
