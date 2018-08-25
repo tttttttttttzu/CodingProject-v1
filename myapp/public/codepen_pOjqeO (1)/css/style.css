@@ -1,0 +1,86 @@
+.He{
+transform:rotate(-10deg);
+}
+
+.Ha{
+transform:rotate(30deg);
+}
+
+.C{
+  position: absolute;
+  font-size:28px;
+  top: 34%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%)
+}
+.B{
+  position: absolute;
+  font-size:20px;
+  top: 20%;
+  left: 53%;
+  transform: translateX(-50%) translateY(-50%)
+}
+
+
+
+.A{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%)
+}
+
+
+.po{
+  font-size:35px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%)
+}
+.G {
+  background:rgb(255,0,0);
+  position: absolute;
+  height:25vh;
+  width:30vw;
+  top: 50%;
+  left: 30%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius:500px;
+  box-shadow: 10px 20px 5px #ddd;
+}
+
+.G:hover{
+background:rgb(210,0,0);
+
+}
+
+
+.G:active{
+  background:rgb(175,0,0);
+}
+
+
+.P{
+  background:rgb(190,190,190);
+  position: absolute;
+  height:95vh;
+  width:35vw;
+  top: 50%;
+  left: 75%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius:20px;
+  box-shadow: 10px 20px 5px #ddd;
+}
+.P{
+  background:rgb(190,190,190);
+  position: absolute;
+  height:95vh;
+  width:35vw;
+  top: 50%;
+  left: 75%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius:20px;
+  box-shadow: 10px 20px 5px #ddd;
+}
+
